@@ -1,0 +1,10 @@
+{
+    "type": "module",
+    "devDependencies": {
+        "@babel/core": "^7.17.10",
+        "@types/crypto-js": "^4.1.1"
+    },
+    "dependencies": {
+        "crypto-js": "^4.1.1"
+    }
+}
