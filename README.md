@@ -1,1 +1,1 @@
-## Blockchain app test
+## A blockchain script
