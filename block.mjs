@@ -2,11 +2,10 @@ import pkg from 'crypto-js';
 const { SHA256 } = pkg;
 
 export class Block {
-    constructor(index, timestamp, data, previousHash = '') {
-        this.index = index;
-        this.timestamp = timestamp;
-        this.data = data;
+    constructor( timestamp, transactions, previousHash = '') {
         this.previousHash = previousHash;
+        this.timestamp = timestamp;
+        this.transactions = transactions;
         this.hash = this.calculateHash();
         this.nonce = 0;
     }
@@ -22,6 +21,6 @@ export class Block {
             this.hash = this.calculateHash();
         }
 
-        console.log("Block mined: " + this.hash)
+        console.log("Block mined: " + this.hash + " " + this.nonce)
     }
 }
