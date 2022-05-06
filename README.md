@@ -1,1 +1,1 @@
-## A blockchain script
+## Blockchain Code Example
